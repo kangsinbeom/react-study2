@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Counter />
       <br />
-      <button> work로 이동</button>
+      <button onClick={() => nevigate("/work")}> work로 이동</button>
     </div>
   );
 }
@@ -17,3 +17,4 @@ function Home() {
 export default Home;
 
 // useNavigate 를 써보자
+// 이거 쓸 때에도 onclick에 콜백함수를 넣어야한다는 것을 기억하자
