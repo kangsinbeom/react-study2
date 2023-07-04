@@ -3,8 +3,8 @@ const INCREASEMENT = "INCREASEMENT";
 const DECREASEMENT = "DECREASEMENT";
 
 // 액션 크리에이트
-export const increase = () => ({ type: INCREASEMENT });
-export const decrease = () => ({ type: DECREASEMENT });
+export const increase = (payload) => ({ type: INCREASEMENT, payload });
+export const decrease = (payload) => ({ type: DECREASEMENT, payload });
 
 
 
@@ -18,9 +18,9 @@ const initalState = {
 const counter = (state = initalState, action) => {
   switch (action.type) {
     case INCREASEMENT:
-      return {...state, number : state.number + 1 };
+      return {...state, number : state.number + action.payload };
     case DECREASEMENT:
-      return  {...state, number : state.number - 1 };
+      return  {...state, number : state.number - action.payload };
     default:
       return state;
   }
