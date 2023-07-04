@@ -1,13 +1,11 @@
 import './App.css';
-import Counter from './components/counter/Counter';
-import ReactRouterDom from'./components/router/ReactRouterDom';
+
+import Router from './shared/Router';
+
 
 function App() {
   return (
-    <div>
-      <Counter />
-      <ReactRouterDom />
-    </div>
+    <Router />
   );
 }
 
