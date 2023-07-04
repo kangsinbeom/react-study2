@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
-
+import WorkDown from "../pages/WorkDown";
 const Router = () => {
   return (
       <BrowserRouter>
@@ -11,7 +11,8 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/work/" element={<Work />} />
+          <Route path="/work/:id" element={<WorkDown />} />
         </Routes>
       </BrowserRouter>
     );
