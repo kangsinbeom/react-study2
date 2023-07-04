@@ -10,3 +10,11 @@ redux : 리덕스 관련 코드를 모두 몰아넣고
 config : 리덕스 설정 관련 파일 전부
 store : 중앙 state 관리소
 modules : state의 그룹 TodoList, todos.js
+
+
+selector를 이용해서 값을 불러올 때 주의할 점
+1. useSelector에 {} 씌우기
+2. useSelector 안에는 콜백함수가 들어간다는 것을 기억하기
+
+
+ 2) 스토에어 접근해서 값을 바꾸어보자
