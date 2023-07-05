@@ -1,0 +1,19 @@
+jsonsever를 사용해보자 
+
+구글에 npm jsonsever를 검색해보자
+
+key 부분이 쌍따옴표는 JSON형식이다.
+
+http protocol
+약속해놓은 방식
+
+
+
+axios 비동기통신에 대해서 공부해보자
+
+axios 패키지를 기억하자
+
+crud를 한번 해보자
+
+path 방법과 query방법을 적절하게 혼합해서 가져가고싶은 정보를 가져가줘
+query는 filter를 거칠때 쓰는 느낌으로 써보자

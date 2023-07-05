@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "ㅁㄴㅇ",
+      "content": "json-server를 배워봅시다."
+    },
+    {
+      "id": 2,
+      "title": "json-server1",
+      "content": "json-server를 배워봅시다."
+    },
+    {
+      "id": 3,
+      "title": "json-server2",
+      "content": "json-server를 배워봅시다."
+    },
+    {
+      "title": "ㅁㅇㄴㄹ",
+      "content": "ㅁㄴㅇㄹ",
+      "id": 4
+    },
+    {
+      "title": "ㅁㄴㅇㄹ",
+      "content": "ㅁㄴㅇㄹ",
+      "id": 5
+    },
+    {
+      "title": "ㅁㄴㅇ",
+      "content": "ㅁㄴㅇ",
+      "id": 6
+    }
+  ]
+}
