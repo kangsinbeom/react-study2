@@ -1,13 +1,8 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "ㅁㄴㅇ",
-      "content": "json-server를 배워봅시다."
-    },
-    {
       "id": 2,
-      "title": "json-server1",
+      "title": "asdf",
       "content": "json-server를 배워봅시다."
     },
     {
@@ -16,19 +11,9 @@
       "content": "json-server를 배워봅시다."
     },
     {
-      "title": "ㅁㅇㄴㄹ",
-      "content": "ㅁㄴㅇㄹ",
+      "title": "asdf",
+      "content": "asdf",
       "id": 4
-    },
-    {
-      "title": "ㅁㄴㅇㄹ",
-      "content": "ㅁㄴㅇㄹ",
-      "id": 5
-    },
-    {
-      "title": "ㅁㄴㅇ",
-      "content": "ㅁㄴㅇ",
-      "id": 6
     }
   ]
 }
