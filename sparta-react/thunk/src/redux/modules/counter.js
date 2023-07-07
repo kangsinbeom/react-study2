@@ -1,4 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk } from "@reduxjs/toolkit"
+
+// 청크를 생성하기
+// 2개의 인풋 이름(큰 의미 없음), 함수
+// 청크를 쓰는 이유는 비동기 통신을 할때 주로 사용하는데 
+export const __addNumber = createAsyncThunk(
+  "ADD_NUMBER_WAIT",
+  (payload, thunkAPI)=> {
+    // 수행하고 싶은 동작을 넣는다 : 3초를 기다리게 할 예정
+    setTimeout(() => {
+      thunkAPI.dispatch(addNumber(payload))
+    }, 3000)
+  }  
+);
+// 이걸 사용하면 자동으로 비동기로 작동을 하게 되는건가 미들웨어니깐??
+export const __minusNumber = createAsyncThunk(
+  "MINUS_NUMBER_WAIT",
+  (payload, thunkAPI)=> {
+    // 수행하고 싶은 동작을 넣는다 : 3초를 기다리게 할 예정
+    setTimeout(() => {
+      thunkAPI.dispatch(minusNumber(payload))
+    }, 3000)
+  }  
+);
+
 
 
 // 이름이 가지는게 어떤거였지? 의미가?? 이게 store에 들어가나?
@@ -21,7 +46,6 @@ const slicedCounter = createSlice({
     }
   }
 })
-console.log(slicedCounter);
 // counter의 객체모습도 보고싶은데 보니까 이해가 좀 되네
 export const { addNumber, minusNumber } = slicedCounter.actions
 export default slicedCounter.reducer;
