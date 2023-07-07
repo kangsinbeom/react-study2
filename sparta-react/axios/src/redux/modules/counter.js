@@ -16,6 +16,7 @@ const counterSlice = createSlice({
     reducers: {
       adddNumber : (state, action) => {
         state.number = state.number + action.payload;
+        // 지금 이 방식이 불변성이 지켜지는지 알아야되고 state 안에 number가 없어서 추가하는 모양새인지 알아야곘음
       },
       minusNumber : (state, action) => {
         state.number = state.number - action.payload;
