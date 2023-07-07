@@ -1,0 +1,6 @@
+1. counter 함수가 구성된 App을 만들기
+2. thunk 함수를 만들기 : createAsyncThunk
+  - reduxToolkit 내장 API
+3. createSlice >> extraReducer에 thunk를 등록
+4. dispatch를 통해서 함수 전달
+5. test
