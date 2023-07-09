@@ -1,9 +1,16 @@
-function App() {
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+import Router from "./shared/Router";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
+
+const App = () => {
   return (
-    <>
-      <div>hi</div>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <Router />
+    </QueryClientProvider>
   );
-}
+};
 
 export default App;
