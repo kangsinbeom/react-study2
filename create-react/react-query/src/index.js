@@ -12,8 +12,8 @@ const queryClient = new QueryClient();
 root.render(
   <Provider store={store}>
     <QueryClientProvider client={queryClient}>
-    <App />
-  </QueryClientProvider>
+      <App />
+    </QueryClientProvider>
   </Provider>
   
 );

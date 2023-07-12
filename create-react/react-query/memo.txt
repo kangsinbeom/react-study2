@@ -5,3 +5,25 @@ button을 클릭하면 useQuery에 query를 1개추가하기
 mutation을 통해서 db.json을 수정해보기
 순서 : 데이터 수정하고 json-server 수정되는 그거 해보기
 reactQuery와 reduxtoolkit을 조화롭게 섞어보기
+
+useMutation()의 기본문법
+
+import {useMutation} from "react-query";
+
+const {isLoading, data, mutate} = useMutation(mutationFun, options)
+여기서 mutationFun === mutate를 위한 패치함수
+queryKey가 따로 필요하지 않다. => 왜일까??
+
+options 에는 무엇이 들어있을까??
+
+onMutate mutation 전에 실행되는 함수 미리 랜더링하고자 할 때 유용(어떻게쓰는지 봐야 알 것 같다)
+
+onSuccess onError onSettoled
+성공시     실패시   여부 상관 없이 실행
+
+returns 
+
+mutate mutation을 실행시키는 메서드 이걸통해서 mutation이 실행이 된다
+mutateAsync 비동기 연쇄로직이나 mutation의 결과로 뭘 해야되는경우
+catch로 에러 핸들링을 직접해야한다
+

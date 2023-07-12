@@ -5,7 +5,22 @@ const instance = axios.create({
 
 })
 
-export const getTodos = async () => {
-  const response = await instance.get(`/todos`)
+const getTodos = async () => {
+  const response = await instance.get(`/todos`,{
+    params : {
+      format : "json",
+      limit : 5,
+      has_breeds : true,
+      order : "ASC"
+    }
+  })  
+
   return response.data
 }
+
+const addTodo = async (todo) => {
+  const response = await instance.post(`/todos`, todo)
+  return response.data
+}
+
+export { getTodos, addTodo }

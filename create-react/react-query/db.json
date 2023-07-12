@@ -1,16 +1,59 @@
 {
   "todos": [
-    { "id": 1, "title": "alpa", "author": "redux" },
-    { "id": 2, "title": "beta", "author": "reducer" },
-    { "id": 3, "title": "gamma", "author": "alpredo" },
-    { "id": 4, "title": "vector", "author": "hoou" }
+    {
+      "id": 1,
+      "title": "alpa",
+      "author": "redux"
+    },
+    {
+      "id": 2,
+      "title": "beta",
+      "author": "reducer"
+    },
+    {
+      "id": 3,
+      "title": "gamma",
+      "author": "alpredo"
+    },
+    {
+      "id": 4,
+      "title": "vector",
+      "author": "hoou"
+    },
+    {
+      "title": "knag",
+      "author": "inLee",
+      "id": 5
+    },
+    {
+      "title": "kang",
+      "author": "sinBeom",
+      "id": 6
+    }
   ],
   "comments": [
-    { "id": 1, "body": "comment1", "postId": 1 },
-    { "id": 2, "body": "comment2", "postId": 2 },
-    { "id": 3, "body": "comment3", "postId": 3 },
-    { "id": 4, "body": "comment4", "postId": 4 }
+    {
+      "id": 1,
+      "body": "comment1",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "comment2",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "comment3",
+      "postId": 3
+    },
+    {
+      "id": 4,
+      "body": "comment4",
+      "postId": 4
+    }
   ],
-
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
