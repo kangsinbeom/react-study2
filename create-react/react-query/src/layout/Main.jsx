@@ -1,6 +1,6 @@
-import TodoList from "../components/todos/todoList/TodoListBox";
+import TodoListContainor from "../containor/TodoListContainor";
 const Main = () => {
-  return <TodoList />;
+  return <TodoListContainor />;
 };
 
 export default Main;

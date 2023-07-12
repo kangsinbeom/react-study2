@@ -17,4 +17,5 @@ const todosSlice = createSlice({
   }
 })
 
+export const { addTodos } = todosSlice.actions
 export default todosSlice.reducer
