@@ -1,10 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import search from "../reducers/searchSlice"
-console.log(search)
+import todos from "../modules/todos"
 const store = configureStore({
-  reducers: {
-    search
+  reducer : {
+    todos
   }
-})
+}); 
 
 export default store;

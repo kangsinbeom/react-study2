@@ -1,0 +1,7 @@
+오늘 해볼 실험
+
+useQuery를 통해서 API에서 data 1개를 가져오기 
+button을 클릭하면 useQuery에 query를 1개추가하기
+mutation을 통해서 db.json을 수정해보기
+순서 : 데이터 수정하고 json-server 수정되는 그거 해보기
+reactQuery와 reduxtoolkit을 조화롭게 섞어보기
